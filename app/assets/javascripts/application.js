@@ -13,4 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require brewhouse.scripts
+//= require jquery.parallax.min.js
+//= require jquery.superslides.min.js
+//= require jquery.easing.1.3.js
+//= require codemirror
+//= require jPushMenu
+
+
+

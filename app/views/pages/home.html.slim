@@ -1,2 +1,181 @@
-h1 Pages#home
-p Find me in app/views/pages/home.html.slim
+#page.hfeed.site
+      a.skip-link.screen-reader-text[href="#content"]
+        | Skip to content
+      header#masthead.site-header[role="banner"]
+        .grid.grid-pad
+          .site-branding.col-9-12.mobile-col-8-12
+            .site-logo
+              a[href="https://modernthemes.net/wordpress-demo/brewhouse/" title="Brewhouse" rel="home"]
+                img[src="https://modernthemes.net/wordpress-demo/brewhouse/wp-content/uploads/sites/6/2014/09/brewhouse.png" alt="Brewhouse"]
+          .col-3-12.mobile-col-4-12.push-right
+            button.toggle-menu.menu-right.push-right
+              span.hide-on-mobile
+                | Menu
+              i.fa.fa-bars
+      nav.cbp-spmenu.cbp-spmenu-vertical.cbp-spmenu-right
+        h3
+          | Menu
+        .menu-menu-1-container
+          ul#menu-menu-1.menu
+            li#menu-item-152.menu-item.menu-item-type-post_type.menu-item-object-page.current-menu-item.page_item.page-item-142.current_page_item.menu-item-152
+              a[href="https://modernthemes.net/wordpress-demo/brewhouse/"]
+                | Home
+            li#menu-item-159.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children.menu-item-159
+              a[href="https://modernthemes.net/wordpress-demo/brewhouse/beer-list/"]
+                | Beer List
+              ul.sub-menu
+                li#menu-item-154.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-154
+                  a[href="https://modernthemes.net/wordpress-demo/brewhouse/about/"]
+                    | About Page
+            li#menu-item-146.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-146
+              a[href="https://modernthemes.net/wordpress-demo/brewhouse/gallery/"]
+                | Masonry Gallery
+            li#menu-item-158.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-158
+              a[href="https://modernthemes.net/wordpress-demo/brewhouse/news-events/"]
+                | News & Events
+            li#menu-item-156.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-156
+              a[href="https://modernthemes.net/wordpress-demo/brewhouse/sample-page-2/"]
+                | Default Page
+            li#menu-item-160.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-160
+              a[href="https://modernthemes.net/wordpress-demo/brewhouse/typography/"]
+                | Typography
+            li#menu-item-161.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-161
+              a[href="https://modernthemes.net/wordpress-demo/brewhouse/shortcodes/"]
+                | Shortcodes
+            li#menu-item-155.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-155
+              a[href="https://modernthemes.net/wordpress-demo/brewhouse/contact/"]
+                | Contact
+        a.toggle-menu.menu-right.close-btn
+          i.fa.fa-remove.push-right[style="margin-top: 12px;"]
+      section#content.site-content
+        #slides
+          .slides-container
+            #scene.slide-content
+              .box-align
+                .vertical-align
+                  .layer.data[data-depth="0.20"]
+                    img.badge.preserve.hide-on-mobile[src="https://modernthemes.net/wordpress-demo/brewhouse/wp-content/uploads/sites/6/2014/08/badge.png" alt="Brewhouse"]
+                  .layer.data[data-depth="0.40"]
+                    h2
+                      | Scroll or Tilt.
+                      br
+                      | Optional Tipsy Effect.
+                  .layer.data[data-depth="0.65"]
+                    a[href="#jump-to"]
+                      i.fa.fa-angle-down
+              img.layer.home-background[data-depth="0.10" src="https://modernthemes.net/wordpress-demo/brewhouse/wp-content/uploads/sites/6/2014/08/parallax-bg.jpg" alt="Brewhouse"]
+        #jump-to.home-info
+          .color-dark
+            .color-text
+              i.fa.fa-home
+              h2
+                | Your Home
+                br
+                | Away From Home
+              aside#text-3.widget.widget_text
+                .textwidget
+                  p
+                    | Brew house is the ideal WordPress theme for bars, restaurants, or breweries. Easily display drinks or any type of menu item.
+              a[href="https://modernthemes.net/wordpress-demo/brewhouse/beer-list/"]
+                button
+                  | View Drink Menu
+          .color-light
+            .color-text
+              i.fa.fa-thumbs-o-up
+              h2
+                | Front page
+                br
+                | widget areas.
+              aside#text-4.widget.widget_text
+                .textwidget
+                  p
+                    | Use this area to display anything from simple text, to your latest blog posts, or even a newsletter sign-up!
+              a[href="https://modernthemes.net/wordpress-demo/brewhouse/about/"]
+                button
+                  | More About Us
+        #cta-parallax.home-cta
+          #scene2.cta-content
+            .layer[data-depth="0.20"]
+              h2
+                | Specialty Beers.
+              hr.hr
+            .layer[data-depth="0.40"]
+              aside#text-5.widget.widget_text
+                .textwidget
+                  p
+                    | Right now we have multiple specialty beers on tap. You can try them all at once or stop in multiple times.
+            .layer[data-depth="0.65"]
+              a[href="https://modernthemes.net/wordpress-demo/brewhouse/beer-list/"]
+                button.white-btn
+                  | View Full Menu
+          #scene-bg
+            img.layer.cta-parallax-bg[src="https://modernthemes.net/wordpress-demo/brewhouse/wp-content/uploads/sites/6/2014/09/cta-bg.jpg" data-depth="0.10" alt="Brewhouse"]
+        .featured-drinks
+          .grid.grid-pad
+            .col-1-4
+              .featured-drink
+                img.beer.wp-post-image[width="138" height="200" src="https://modernthemes.net/wordpress-demo/brewhouse/wp-content/uploads/sites/6/2014/09/beer1.png" alt="beer1"]
+                span
+                  | Modern Ale
+                em
+                  | 26 IBU / 5.4%
+                p
+                  | Brewed with locally grown hops and a handful of love.
+            .col-1-4
+              .featured-drink
+                img.beer.wp-post-image[width="138" height="200" src="https://modernthemes.net/wordpress-demo/brewhouse/wp-content/uploads/sites/6/2014/09/beer2.png" alt="beer2"]
+                span
+                  | Illegally Blonde
+                em
+                  | 43 IBU / 4.7%
+                p
+                  | Brewed with locally grown hops and a handful of love.
+            .col-1-4
+              .featured-drink
+                img.beer.wp-post-image[width="138" height="200" src="https://modernthemes.net/wordpress-demo/brewhouse/wp-content/uploads/sites/6/2014/09/beer3.png" alt="beer3"]
+                span
+                  | Whitecaps Witte
+                em
+                  | 43 IBU / 4.7%
+                p
+                  | Brewed with locally grown hops and a handful of love.
+            .col-1-4
+              .featured-drink
+                img.beer.wp-post-image[width="138" height="200" src="https://modernthemes.net/wordpress-demo/brewhouse/wp-content/uploads/sites/6/2014/09/beer1.png" alt="beer1"]
+                span
+                  | Le Bat Bleu
+                em
+                  | 43 IBU / 4.7%
+                p
+                  | Brewed with locally grown hops and a handful of love.
+        .home-info
+          .color-light
+            .color-text
+              i.fa
+              h2
+                | Footer
+                br
+                | Widget Area
+              aside#text-6.widget.widget_text
+                .textwidget
+                  p
+                    | Use this area to display anything from simple text, to your latest blog posts, or even a newsletter sign-up!
+              a[href="https://modernthemes.net/wordpress-demo/brewhouse/about/"]
+                button
+                  | More About Us
+          .color-dark
+            .color-text
+              i.fa.fa-envelope-o
+              h2
+                | Contact us
+                br
+                | Today!
+              aside#text-7.widget.widget_text
+                .textwidget
+                  p
+                    | Want to plan your next party or event at brew house? Contact us today and get the party started.
+              a[href="https://modernthemes.net/wordpress-demo/brewhouse/contact/"]
+                button
+                  | Contact us
+                  br
+                  | Today!
