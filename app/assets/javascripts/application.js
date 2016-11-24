@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require brewhouse.scripts
 //= require jquery.parallax.min.js
 //= require jquery.superslides.min.js

@@ -1,0 +1,41 @@
+
+section#content.site-content
+  #primary.content-area
+    main#main.site-main[role="main"]
+      header.entry-header
+        #scene
+          img.layer.page-header[data-depth="0.10" src="https://modernthemes.net/wordpress-demo/brewhouse/wp-content/uploads/sites/6/2014/08/page-bg2.jpg" alt="Brewhouse"]
+          .page-entry-header
+            .layer.data[data-depth="0.40"]
+              h2
+              h1.page-entry-title
+                | Sign up
+            .layer.data[data-depth="0.80"]
+              a[href="#jump-to"]
+                i.fa.fa-angle-down
+      #jump-to.entry-content
+        .beer-list
+          .grid.grid-pad
+            .col-1-1.text-center
+              .register
+                = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+                  = devise_error_messages!
+                  .field
+                    = f.label :email
+                    br/
+                    = f.email_field :email, autofocus: true
+                  .field
+                    = f.label :password
+
+                    br/
+                    = f.password_field :password, autocomplete: "off"
+                  .field
+                    = f.label :password_confirmation
+                    br/
+                    = f.password_field :password_confirmation, autocomplete: "off"
+                  br
+                  .actions
+                    = f.submit "Sign up"
+                br
+                = render "devise/shared/links"
+
