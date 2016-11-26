@@ -1,11 +1,14 @@
 class YotiController < ApplicationController
   before_action :authenticate_user!
+  before_filter  only: :profile do
+    redirect_to yoti_path unless current_user && !current_user.yoti_id.nil?
+  end
 
   def index
     @yoti_application_id = 'bdf7f7cd-5900-4faa-8e13-8a5b40bdb2b9'
   end
 
-  def profile
+  def callback
     yoti_activity_details = Yoti::Client.get_activity_details(params[:token])
 
     if yoti_activity_details.outcome == 'SUCCESS'
