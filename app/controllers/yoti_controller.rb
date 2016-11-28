@@ -9,9 +9,12 @@ class YotiController < ApplicationController
   end
 
   def callback
-    puts 'uououo'
+    puts 'callback'
+    token = params[:token]
+    puts token
+
     yoti_activity_details = Yoti::Client.get_activity_details(params[:token])
-    puts  yoti_activity_details
+    puts  yoti_activity_details.outcome
     if yoti_activity_details.outcome == 'SUCCESS'
       current_user.update_attributes yoti_id: yoti_activity_details.user_id
       @user_id = yoti_activity_details.user_id
