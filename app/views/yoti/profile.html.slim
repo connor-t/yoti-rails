@@ -8,7 +8,7 @@ section#content.site-content
           .layer.data[data-depth="0.40"]
             h2
             h1.page-entry-title
-              = "Thankyou! #{@given_names}"
+              | "Thankyou!"
           .layer.data[data-depth="0.80"]
             a[href="#jump-to"]
               i.fa.fa-angle-down
@@ -19,3 +19,4 @@ section#content.site-content
             h2 = link_to "You can now visit the store!", store_index_path
             br
             br
+            = "user_id = #{@user_id}"

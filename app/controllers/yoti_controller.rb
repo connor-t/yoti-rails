@@ -8,10 +8,9 @@ class YotiController < ApplicationController
     @yoti_application_id = 'bdf7f7cd-5900-4faa-8e13-8a5b40bdb2b9'
   end
 
-  def callback
+  def profile
+    puts current_user.email
     puts 'callback'
-    token = params[:token]
-    puts token
 
     yoti_activity_details = Yoti::Client.get_activity_details(params[:token])
     puts  yoti_activity_details.outcome
