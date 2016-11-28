@@ -12,6 +12,7 @@ class YotiController < ApplicationController
     yoti_activity_details = Yoti::Client.get_activity_details(params[:token])
 
     if yoti_activity_details.outcome == 'SUCCESS'
+      current_user.update_attributes yoti_id: yoti_activity_details.user_id
       @user_id = yoti_activity_details.user_id
 
       user_profile = yoti_activity_details.user_profile
