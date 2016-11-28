@@ -1,8 +1,8 @@
 class YotiController < ApplicationController
   before_action :authenticate_user!
-  before_filter  only: :profile do
-    redirect_to yoti_path unless current_user && !current_user.yoti_id.nil?
-  end
+  # before_filter  only: :profile do
+  #   redirect_to yoti_path unless current_user && !current_user.yoti_id.nil?
+  # end
 
   def index
     @yoti_application_id = 'bdf7f7cd-5900-4faa-8e13-8a5b40bdb2b9'
